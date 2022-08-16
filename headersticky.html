@@ -24,7 +24,8 @@
     <section class="banner"></section>
 
    <script type="text/javascript">
-      window.addEventListener("scroll", function(){
+       var navbar
+        window.addEventListener("scroll", function(){
         var header =this.document.querySelector ("header");
         header.classList.toggle("sticky", window.scrollY > 0);
     }) 

@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #000;
+    min-height: 200vh;
+}
+
+.container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 100000;
+}
+
+.sticky{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #fff;
+
+}
+
+.logo{
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transform-origin: 0.6s;
+}
+
+.container ul{
+    list-style: none;
+}
+
+.container ul li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.container ul li a{
+    font-size: 17px;
+    padding: 5px;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+    color: #fff;
+}
+
+.container ul li a:hover{
+    color: rgb(107, 36, 173);
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("todo/imagenes-pruebas/semaforo1.jpeg");
+    background-size: cover;
+}
+
+
+
+#show-login{
+    padding: 10px 25px; 
+    background-color:blueviolet;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+}
+
+#show-login:hover{
+    background-color: rgb(107, 36, 173);
+}
+
+header .container{
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header nav{
+    flex-direction: row;
+    display: inline-block;
+    padding-bottom: 0;
+    text-align: center;
+    justify-content: space-between;
+}   
+                                                                                                        
+.container.sticky .logo,
+.container.sticky ul li a{
+    color: #000;
+} 

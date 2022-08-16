@@ -24,3 +24,9 @@ document.querySelector(".popup .close-btn").addEventListener("click", function()
     var header =this.document.querySelector ("header");
     header.classList.toggle("sticky", window.scrollY > 0)
 })*/
+
+var navbar = document.getElementById("Header") //agarro el header identificandolo por el id y lo guardo en una variable
+
+window.addEventListener("scroll", () =>{ //cuando scrolleo
+    navbar.classList.toggle("sticky", window.scrollY > 0);  //le agrego la clase cuando scrollea
+})
